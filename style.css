@@ -39,9 +39,19 @@ img {
 }
 
 .container {
-  width: 95%;
+  width: 90%;
   max-width: 130rem;
   margin: 0 auto;
+}
+
+.small-container {
+  width: 90%;
+  max-width: 104.5rem;
+  margin: 0 auto;
+}
+
+.mb-medium {
+  margin-bottom: 3.2rem;
 }
 
 /*********************/
@@ -192,4 +202,152 @@ header {
 .price-box p:last-child {
   font-size: 2rem;
   letter-spacing: 6px;
+}
+
+/*********************/
+/* FEATURED SECTION */
+/*********************/
+.featured-section {
+  padding: 8rem 0;
+}
+
+.featured-cat {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 4.8rem;
+  row-gap: 2.4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featured-img-box {
+  position: relative;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.featured-img-box::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.7),
+    transparent
+  );
+  width: 100%;
+  height: 100%;
+}
+
+.featured-img-box:first-child {
+  grid-row: 1 / -1;
+}
+
+.featured-text {
+  position: absolute;
+  top: 2.4rem;
+  left: 2.4rem;
+
+  color: #fff;
+  font-family: "Bebas Neue", cursive;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.featured-text span {
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
+}
+
+.featured-text p {
+  font-size: 3rem;
+  line-height: 0.9;
+}
+
+/*********************/
+/* PRODUCTS SECTION */
+/*********************/
+.products-section {
+  padding: 8rem 0;
+}
+
+.product-text-box {
+  max-width: 80rem;
+  text-align: center;
+  margin: 0 auto 6.4rem;
+}
+
+.subheading {
+  font-family: "Bebas Neue", cursive;
+  display: inline-block;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #ffc045;
+  padding: 1.2rem 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.secondary-heading {
+  font-size: 3.6rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.product-text {
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.product-card-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.4rem;
+}
+
+.product-card {
+  padding: 2.4rem;
+}
+
+.product-card:nth-child(2) {
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+}
+
+.product-img {
+  margin-bottom: 2.4rem;
+}
+
+.product-content {
+  text-align: center;
+}
+
+.product-title {
+  font-family: "Bebas Neue", cursive;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #bf2222;
+  padding: 1.6rem 2.4rem;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #e62222;
+  transform: translateY(-3px);
 }
