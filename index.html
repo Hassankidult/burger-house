@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat&display=swap"
       rel="stylesheet"
     />
+
     <title>Burger House</title>
   </head>
   <body>
@@ -110,7 +111,9 @@
       <section class="products-section">
         <div class="container">
           <div class="product-text-box">
-            <span class="subheading">Always tasty burger</span>
+            <span class="product-subheading subheading"
+              >Always tasty burger</span
+            >
             <h2 class="secondary-heading">Choose & enjoy</h2>
             <p class="product-text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
@@ -160,6 +163,109 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-------------------------------->
+      <!-- EVENTS SECTION -->
+      <!-------------------------------->
+      <section class="events-section">
+        <div class="container">
+          <div class="carousel">
+            <div class="event-text-box">
+              <span class="event-subheading subheading">Discover</span>
+              <h2 class="secondary-heading">Upcoming events</h2>
+              <p class="product-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolores praesentium quaerat impedit nam, cupiditate, a aut error
+                eligendi sapiente voluptatem in soluta tempore maxime,
+                exercitationem ipsum dolore molestiae ad quae. Lorem ipsum dolor
+                sit, amet consectetur adipisicing.
+              </p>
+            </div>
+            <div>
+              <img
+                src="./images/Burger-upcomming.png"
+                alt=""
+                class="event-img"
+              />
+            </div>
+            <button class="event-btn event-btn--left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="event-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+            <button class="event-btn event-btn--right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="event-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+            <div class="dots">
+              <button class="dot-btn dot-btn--active">&nbsp;</button>
+              <button class="dot-btn">&nbsp;</button>
+              <button class="dot-btn">&nbsp;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------------->
+      <!-- RESERVATION SECTION -->
+      <!-------------------------------->
+      <section class="reservation-section">
+        <div class="container resrvetion-text">
+          <span class="reservation-subheading subheading">Resevvation</span>
+          <h2 class="secondary-heading">Book your table</h2>
+        </div>
+        <div class="container">
+          <form action="" class="reservation-form">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Hassan Kidult" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="me@example.com" />
+            </div>
+            <div>
+              <label for="date">Date</label>
+              <input type="date" id="date" />
+            </div>
+            <div>
+              <label for="time">Time</label>
+              <input type="time" id="time" />
+            </div>
+            <div>
+              <label for="people">Number of people</label>
+              <input type="number" id="people" />
+            </div>
+            <button class="submit-btn btn">Find a table</button>
+          </form>
+          <img src="./images/cta-burger.png" alt="" class="burger-img" />
+          <img src="./images/cta-bottle.png" alt="" class="bottle-img" />
+          <img src="./images/cta-plate.png" alt="" class="plate-img" />
         </div>
       </section>
     </main>

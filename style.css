@@ -50,6 +50,26 @@ img {
   margin: 0 auto;
 }
 
+.primary-heading {
+  font-size: 9.8rem;
+  letter-spacing: 1.3px;
+  text-shadow: 2px 3px 1px #fff;
+}
+
+.secondary-heading {
+  font-size: 3.6rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.subheading {
+  font-family: "Bebas Neue", cursive;
+  display: inline-block;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .mb-medium {
   margin-bottom: 3.2rem;
 }
@@ -145,12 +165,6 @@ header {
   padding: 1.2rem 1.6rem;
   border: 2px dashed #000;
   margin-bottom: 2.4rem;
-}
-
-.primary-heading {
-  font-size: 9.8rem;
-  letter-spacing: 1.3px;
-  text-shadow: 2px 3px 1px #fff;
 }
 
 .primary-heading span {
@@ -281,21 +295,10 @@ header {
   margin: 0 auto 6.4rem;
 }
 
-.subheading {
-  font-family: "Bebas Neue", cursive;
-  display: inline-block;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.product-subheading {
   background-color: #ffc045;
   padding: 1.2rem 1.6rem;
   margin-bottom: 2.4rem;
-}
-
-.secondary-heading {
-  font-size: 3.6rem;
-  margin-bottom: 1.6rem;
-  letter-spacing: 1px;
 }
 
 .product-text {
@@ -334,7 +337,8 @@ header {
 }
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+.btn {
   display: inline-block;
   font-family: "Alfa Slab One", cursive;
   font-size: 1.2rem;
@@ -347,7 +351,177 @@ header {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+.btn:hover {
   background-color: #e62222;
   transform: translateY(-3px);
+}
+
+/*********************/
+/* EVENTS SECTION */
+/*********************/
+.events-section {
+  padding: 8rem 0;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 3.2rem;
+  padding: 3.4rem 4.8rem;
+  box-shadow: 0 12px 24px rgb(0 0 0 / 10%);
+  position: relative;
+}
+
+.event-subheading {
+  margin-bottom: 0.8rem;
+}
+
+.event-btn {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ffc045;
+  box-shadow: 0 12px 24px rgb(0 0 0 / 20%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.event-btn:hover {
+  background-color: #3d2514;
+  border: none;
+}
+
+.event-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: #ffc045;
+}
+
+.event-btn--left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.event-btn--right {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(4.8rem, -3.2rem);
+
+  display: flex;
+  gap: 1.2rem;
+}
+
+.dot-btn {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 2px solid #3d2514;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot-btn:hover {
+  transform: scale(1.1);
+}
+
+.dot-btn--active {
+  background-color: #3d2514;
+}
+
+/*********************/
+/* RESERVATION SECTION */
+/*********************/
+.reservation-section {
+  padding: 8rem 0 12.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.resrvetion-text {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.reservation-subheading {
+  margin-bottom: 1.2rem;
+}
+
+.reservation-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3.2rem;
+  align-items: center;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.reservation-form label {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.reservation-form input {
+  font-family: inherit;
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 1.2rem;
+  border: none;
+  background-color: #e9e9e9;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.submit-btn {
+  display: block;
+  font-size: 1.4rem;
+  border: none;
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  align-self: end;
+}
+
+.reservation-section img {
+  position: absolute;
+  width: 25%;
+}
+
+.burger-img {
+  top: 0;
+  left: 0;
+  transform: translate(-15%, -8%);
+  max-width: 36rem;
+}
+
+.bottle-img {
+  max-width: 18%;
+  top: 20rem;
+  left: 4.5rem;
+}
+
+.plate-img {
+  bottom: 0;
+  right: 0;
+  transform: translate(40%, 20%);
+  z-index: 1;
 }
