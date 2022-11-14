@@ -74,6 +74,27 @@ img {
   margin-bottom: 3.2rem;
 }
 
+.nav-link:focus,
+.delivery-text a:focus,
+.header-logo:focus {
+  box-shadow: 0 0 0 0.6rem rgba(61, 37, 20, 0.5) !important;
+}
+
+.social-link:focus,
+.email:focus,
+.footer-logo:focus {
+  box-shadow: 0 0 0 0.6rem rgba(255, 255, 255, 0.5) !important;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 0.6rem rgba(191, 34, 34, 0.5) !important;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.6rem rgba(255, 193, 69, 0.5) !important;
+}
+
 /*********************/
 /* HEADER */
 /*********************/
@@ -524,4 +545,105 @@ input::placeholder {
   right: 0;
   transform: translate(40%, 20%);
   z-index: 1;
+}
+
+/*********************/
+/* FOOTER */
+/*********************/
+footer {
+  position: relative;
+  padding: 8rem 0 4.8rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./images/footer-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  grid-gap: 6.4rem;
+  color: #fff;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 3.2rem;
+}
+
+.footer-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #ececec;
+}
+
+.footer ul {
+  justify-self: center;
+}
+
+.contacts {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.contacts:first-child {
+  margin-bottom: 1.6rem;
+}
+
+.contacts .uil {
+  font-size: 3rem;
+}
+
+.address,
+.email {
+  display: block;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  justify-self: end;
+}
+
+.social-link {
+  width: 4rem;
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover {
+  background-color: #e62222;
+}
+
+.social-icon {
+  font-size: 2.4rem;
+  /* padding: 0.8rem; */
+  color: #3d2514;
+}
+
+.copyright-text {
+  font-size: 1.2rem;
+  grid-column: 1 / -1;
+  justify-self: center;
+  text-align: center;
+}
+
+.developed {
+  font-size: 1.6rem;
+  margin-top: 1.6rem;
+}
+.developed span {
+  color: #bf2222;
 }
