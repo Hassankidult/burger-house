@@ -27,11 +27,11 @@
       <div class="container">
         <div class="navbar">
           <a href="" class="header-logo">
-            <img class="logo" src="./images/logo.png" alt="" />
+            <img class="logo" src="./images/logo.png" alt="Burger house logo" />
           </a>
           <div>
             <div class="delivery">
-              <img src="./images/bike.png" alt="" />
+              <img src="./images/bike.png" alt="Delivery Motorbike icon" />
               <span class="delivery-text"
                 >Express Delivery
                 <a href="tel:+1234 567 890">+1234 567 890</a></span
@@ -55,21 +55,23 @@
       <!-- HERO SECTION -->
       <!-------------------------------->
       <section class="hero-section">
-        <div class="container">
-          <div class="hero">
-            <div class="hero-text">
-              <p class="hero-description">
-                It is a good time for the taste of burgers
-              </p>
-              <h1 class="primary-heading">Burger <span>week</span></h1>
-            </div>
-            <div class="hero-img">
-              <img src="./images/hero-img.png" alt="" class="hero-img" />
-              <div class="price-box">
-                <div class="price-content">
-                  <p class="price">$5<span>.49</span></p>
-                  <p>Only</p>
-                </div>
+        <div class="container hero-container">
+          <div class="hero-text">
+            <p class="hero-description">
+              It is a good time for the taste of burgers
+            </p>
+            <h1 class="primary-heading">Burger <span>week</span></h1>
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="./images/hero-img.png"
+              alt="Hamburger, potato fries and cola drink"
+              class="hero-img"
+            />
+            <div class="price-box">
+              <div class="price-content">
+                <p class="price">$5<span>.49</span></p>
+                <p>Only</p>
               </div>
             </div>
           </div>
@@ -80,33 +82,43 @@
       <!-- FEATURED SECTION -->
       <!-------------------------------->
       <section class="featured-section">
-        <div class="small-container">
-          <div class="featured-cat">
-            <figure class="featured-img-box">
-              <img class="featured-img" src="./images/featured-1.png" alt="" />
-              <figcaption class="featured-text">
-                <span class="try-it">Try it today</span>
-                <p>Most popular burger</p>
-              </figcaption>
-            </figure>
-            <figure class="featured-img-box">
-              <img class="featured-img" src="./images/featured-2.png" alt="" />
-              <figcaption class="featured-text">
-                <span class="try-it">Try it today</span>
-                <p>
-                  More fun <br />
-                  more taste
-                </p>
-              </figcaption>
-            </figure>
-            <figure class="featured-img-box">
-              <img class="featured-img" src="./images/featured-3.png" alt="" />
-              <figcaption class="featured-text">
-                <span class="try-it">Try it today</span>
-                <p>Fresh & chili</p>
-              </figcaption>
-            </figure>
-          </div>
+        <div class="small-container featured-product-container">
+          <figure class="featured-img-box">
+            <img
+              class="featured-img"
+              src="./images/featured-1.png"
+              alt="Burger on a wooden plate"
+            />
+            <figcaption class="featured-text">
+              <span class="try-it">Try it today</span>
+              <p>Most popular burger</p>
+            </figcaption>
+          </figure>
+          <figure class="featured-img-box">
+            <img
+              class="featured-img"
+              src="./images/featured-2.png"
+              alt="Two veggie burger on a rectangular wooden plate"
+            />
+            <figcaption class="featured-text">
+              <span class="try-it">Try it today</span>
+              <p>
+                More fun <br />
+                more taste
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="featured-img-box">
+            <img
+              class="featured-img"
+              src="./images/featured-3.png"
+              alt="Beef burger with mustard"
+            />
+            <figcaption class="featured-text">
+              <span class="try-it">Try it today</span>
+              <p>Fresh & chili</p>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -132,7 +144,11 @@
           <div class="product-card-box">
             <!-- Card 1 -->
             <div class="product-card">
-              <img src="./images/Burger.png" alt="" class="product-img" />
+              <img
+                src="./images/Burger.png"
+                alt="Beef burger with cherry tomatoes"
+                class="product-img"
+              />
               <div class="product-content">
                 <p class="product-title">Lorem ipsum dolor.</p>
                 <p class="product-text mb-medium">
@@ -145,7 +161,11 @@
 
             <!-- Card 2 -->
             <div class="product-card">
-              <img src="./images/Burger-2.png" alt="" class="product-img" />
+              <img
+                src="./images/Burger-2.png"
+                alt="Burger"
+                class="product-img"
+              />
               <div class="product-content">
                 <p class="product-title">Lorem ipsum dolor.</p>
                 <p class="product-text mb-medium">
@@ -157,7 +177,11 @@
             </div>
             <!-- Card 3 -->
             <div class="product-card">
-              <img src="./images/Burger.png" alt="" class="product-img" />
+              <img
+                src="./images/Burger.png"
+                alt="Beef burger with cherry tomatoes"
+                class="product-img"
+              />
               <div class="product-content">
                 <p class="product-title">Lorem ipsum dolor.</p>
                 <p class="product-text mb-medium">
@@ -191,7 +215,7 @@
             <div>
               <img
                 src="./images/Burger-upcomming.png"
-                alt=""
+                alt="Burger with french fries"
                 class="event-img"
               />
             </div>
@@ -268,9 +292,21 @@
             </div>
             <button class="submit-btn btn">Find a table</button>
           </form>
-          <img src="./images/cta-burger.png" alt="" class="burger-img" />
-          <img src="./images/cta-bottle.png" alt="" class="bottle-img" />
-          <img src="./images/cta-plate.png" alt="" class="plate-img" />
+          <img
+            src="./images/cta-burger.png"
+            alt="Veggie burger"
+            class="burger-img"
+          />
+          <img
+            src="./images/cta-bottle.png"
+            alt="Sauce bottle"
+            class="bottle-img"
+          />
+          <img
+            src="./images/cta-plate.png"
+            alt="Burger with french fries on a white plate"
+            class="plate-img"
+          />
         </div>
       </section>
     </main>
@@ -282,7 +318,11 @@
       <div class="container footer">
         <div>
           <a href="" class="footer-logo">
-            <img class="logo" src="./images/footer-logo.png" alt="" />
+            <img
+              class="logo"
+              src="./images/footer-logo.png"
+              alt="Burger house logo"
+            />
           </a>
           <p class="footer-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
