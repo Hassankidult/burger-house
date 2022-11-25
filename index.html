@@ -17,13 +17,15 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+
+    <script defer src="script.js"></script>
     <title>Burger House</title>
   </head>
   <body>
     <!-------------------------------->
     <!-- HEADER-->
     <!-------------------------------->
-    <header>
+    <header class="header">
       <div class="container">
         <div class="navbar">
           <a href="" class="header-logo">
@@ -38,7 +40,7 @@
               >
             </div>
             <nav class="main-nav">
-              <ul>
+              <ul class="main-nav-list">
                 <li><a href="" class="nav-link">Home</a></li>
                 <li><a href="" class="nav-link">Menu</a></li>
                 <li><a href="" class="nav-link">Our story</a></li>
@@ -46,6 +48,10 @@
               </ul>
             </nav>
           </div>
+          <button class="mobile-navbar">
+            <i class="uil uil-bars mobile-nav-icon open"></i>
+            <i class="uil uil-times mobile-nav-icon close"></i>
+          </button>
         </div>
       </div>
     </header>
