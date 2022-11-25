@@ -883,9 +883,11 @@ footer {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    transform: translateX(100%);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: all 0.5s;
   }
 
   .main-nav-list {
@@ -911,6 +913,7 @@ footer {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    transform: translateX(0);
   }
 
   .nav-open .open {
