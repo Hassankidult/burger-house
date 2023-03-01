@@ -1,9 +1,18 @@
 // NAVIGATION BUTTON
 const headerEl = document.querySelector(".header");
 const navBarEl = document.querySelector(".mobile-navbar");
+const links = document.querySelectorAll("nav-link");
 
+// HIDE/SHOW NAVIGATION
 navBarEl.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
+});
+
+// Hide menu bar on navbar link click
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    headerEl.classList.remove("nav-open");
+  });
 });
 
 //CAROUSEL
