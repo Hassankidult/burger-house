@@ -15,6 +15,14 @@ links.forEach((link) => {
   });
 });
 
+// Hide menu bar on click ouside of it
+document.addEventListener("click", (e) => {
+  if (e.target.closest(".mobile-navbar")) {
+    return;
+  }
+  headerEl.classList.remove("nav-open");
+});
+
 //CAROUSEL
 let data = [
   {
