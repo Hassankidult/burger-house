@@ -25,7 +25,7 @@
     <!-------------------------------->
     <!-- HEADER-->
     <!-------------------------------->
-    <header class="header">
+    <header class="header sticky">
       <div class="container">
         <div class="navbar">
           <a href="" class="header-logo">
@@ -41,10 +41,10 @@
             </div>
             <nav class="main-nav">
               <ul class="main-nav-list">
-                <li><a href="#index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="#products" class="nav-link">Menu</a></li>
-                <li><a href="#events" class="nav-link">Our story</a></li>
-                <li><a href="#reservation" class="nav-link">Contact us</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
+                <li><a href="#reservation" class="nav-link">Order</a></li>
               </ul>
             </nav>
           </div>
@@ -268,23 +268,41 @@
           <form action="" class="reservation-form">
             <div>
               <label for="name">Name</label>
-              <input type="text" id="name" placeholder="Hassan Kidult" />
+              <input
+                type="text"
+                id="name"
+                placeholder="Hassan Kidult"
+                required
+              />
             </div>
             <div>
               <label for="email">Email</label>
-              <input type="email" id="email" placeholder="me@example.com" />
+              <input
+                type="email"
+                id="email"
+                placeholder="me@example.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              />
             </div>
             <div>
               <label for="date">Date</label>
-              <input type="date" id="date" />
+              <input type="date" id="date" required />
             </div>
             <div>
               <label for="time">Time</label>
-              <input type="time" id="time" />
+              <input type="time" id="time" required />
             </div>
             <div>
               <label for="people">Number of people</label>
-              <input type="number" id="people" />
+              <input
+                type="number"
+                id="people"
+                min="2"
+                max="25"
+                title="2 to 25 people required"
+                required
+              />
             </div>
             <button class="submit-btn btn">Find a table</button>
           </form>
@@ -313,7 +331,7 @@
     <footer>
       <div class="container footer">
         <div>
-          <a href="" class="footer-logo">
+          <a href="index.html" class="footer-logo">
             <img
               class="logo"
               src="./images/footer-logo.png"

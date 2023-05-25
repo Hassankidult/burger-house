@@ -23,6 +23,56 @@ document.addEventListener("click", (e) => {
   headerEl.classList.remove("nav-open");
 });
 
+//STICKY NAVIGATION
+const heroSect = document.querySelector(".hero-section");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    const entry = entries[0];
+    if (!entry.isIntersecting) {
+      //console.log(entry);
+      document.body.classList.add("sticky");
+    }
+    if (entry.isIntersecting) {
+      //console.log(entry);
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+observer.observe(heroSect);
+
+// SMOOTH SCROLLING
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    // Scroll to top
+    const href = link.getAttribute("href");
+    if (href === "index.html" || "#")
+      window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // Scroll to other links
+    if (href !== "index.html" || ("#" && href.startsWith("#"))) {
+      const sectEl = document.querySelector(href);
+
+      //sectEl.scrollIntoView({ behavior: "smooth" });
+
+      const headerHeight = headerEl.getBoundingClientRect().height;
+      console.log(headerHeight);
+      const sectPosition = sectEl.offsetTop - headerHeight;
+
+      window.scrollTo({ behavior: "smooth", top: sectPosition });
+    }
+  });
+});
+
 //CAROUSEL
 let data = [
   {
@@ -69,8 +119,8 @@ const addToSlide = (id) => {
   eventImage.src = data[id].img;
   eventImage.alt = data[id].alt;
   eventText.textContent = data[id].text;
-  eventText.style.animation = "from-top 0.2s ease-in";
-  eventImage.style.animation = "from-bottom 0.2s ease-in";
+  eventText.style.animation = "from-top 0.5s ease-in";
+  eventImage.style.animation = "from-bottom 0.5s ease-in";
 };
 
 // Removing the style after amination ends(to enable the animation to play again)
